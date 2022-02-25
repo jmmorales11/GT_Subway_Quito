@@ -8,6 +8,8 @@ package ec.edu.espe.proyect.view;
 import ec.edu.espe.proyect.controller.FormsCreate;
 import ec.edu.espe.proyect.controller.FormsHandler;
 import java.awt.Color;
+import java.util.jar.Attributes.Name;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -93,6 +95,11 @@ public class FrmLogIn extends javax.swing.JFrame {
         BTNBotonEmergencia.setBackground(new java.awt.Color(204, 204, 255));
         BTNBotonEmergencia.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         BTNBotonEmergencia.setText("BOTON DE EMERGENCIA");
+        BTNBotonEmergencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BTNBotonEmergenciaActionPerformed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 2, 12)); // NOI18N
         jLabel4.setText("En caso de una emeregencia dentro de la unidad presione el siguiente boton ");
@@ -233,6 +240,10 @@ public class FrmLogIn extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void BTNBotonEmergenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BTNBotonEmergenciaActionPerformed
+        JOptionPane.showMessageDialog(this, "You want to activate the emergency button  "  );
+    }//GEN-LAST:event_BTNBotonEmergenciaActionPerformed
 
     /**
      * @param args the command line arguments
