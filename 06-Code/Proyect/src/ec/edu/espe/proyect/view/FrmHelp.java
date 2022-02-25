@@ -31,7 +31,7 @@ public class FrmHelp extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        cmbAsk = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -46,12 +46,12 @@ public class FrmHelp extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel2.setText("Preguntas Frecuentes");
 
-        jComboBox1.setBackground(new java.awt.Color(204, 204, 255));
-        jComboBox1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "¿Cómo crear una cuenta?", "¿Cómo cambiar el nombre del usuario?", "¿Cómo cambiar la contraseña?", "¿Cómo recargar la tarjeta ?" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        cmbAsk.setBackground(new java.awt.Color(204, 204, 255));
+        cmbAsk.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cmbAsk.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "¿Cómo crear una cuenta?", "¿Cómo cambiar el nombre del usuario?", "¿Cómo cambiar la contraseña?", "¿Cómo recargar la tarjeta ?" }));
+        cmbAsk.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                cmbAskActionPerformed(evt);
             }
         });
 
@@ -94,7 +94,7 @@ public class FrmHelp extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbAsk, javax.swing.GroupLayout.PREFERRED_SIZE, 328, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel3)
                             .addComponent(jLabel2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -121,7 +121,7 @@ public class FrmHelp extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel2)
                 .addGap(37, 37, 37)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(cmbAsk, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addGap(26, 26, 26)
@@ -159,9 +159,9 @@ public class FrmHelp extends javax.swing.JFrame {
         FormsHandler.goToMainScreen(this);
     }//GEN-LAST:event_btnMainMenuActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void cmbAskActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbAskActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_cmbAskActionPerformed
 
     /**
      * @param args the command line arguments
@@ -201,7 +201,7 @@ public class FrmHelp extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAsk;
     private javax.swing.JButton btnMainMenu;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> cmbAsk;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
