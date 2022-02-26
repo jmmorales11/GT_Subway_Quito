@@ -101,6 +101,11 @@ public class FrmRecharges extends javax.swing.JFrame {
         btnRecharges.setBackground(new java.awt.Color(204, 204, 255));
         btnRecharges.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnRecharges.setText("Recargar");
+        btnRecharges.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRechargesActionPerformed(evt);
+            }
+        });
 
         btnSave.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         btnSave.setText("Save this credit card for future use");
@@ -241,6 +246,10 @@ public class FrmRecharges extends javax.swing.JFrame {
     private void btnMainMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainMenuActionPerformed
         FormsHandler.goToMainScreen(this);
     }//GEN-LAST:event_btnMainMenuActionPerformed
+
+    private void btnRechargesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRechargesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRechargesActionPerformed
 
     /**
      * @param args the command line arguments

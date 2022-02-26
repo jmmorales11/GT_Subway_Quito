@@ -5,6 +5,7 @@
 package ec.edu.espe.proyect.view;
 
 import ec.edu.espe.proyect.controller.FormsHandler;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -29,7 +30,7 @@ public class FrmMyAccount extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        btnReturn = new javax.swing.JButton();
+        btnMainMenu = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -37,18 +38,18 @@ public class FrmMyAccount extends javax.swing.JFrame {
         jTextField1 = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
         jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnEditProfile = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
-        btnReturn.setBackground(new java.awt.Color(204, 204, 255));
-        btnReturn.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        btnReturn.setText("Menu Principal");
-        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+        btnMainMenu.setBackground(new java.awt.Color(204, 204, 255));
+        btnMainMenu.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnMainMenu.setText("Menu Principal");
+        btnMainMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnReturnActionPerformed(evt);
+                btnMainMenuActionPerformed(evt);
             }
         });
 
@@ -77,9 +78,14 @@ public class FrmMyAccount extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
-        jButton1.setText("Editar perfil");
+        btnEditProfile.setBackground(new java.awt.Color(204, 204, 255));
+        btnEditProfile.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        btnEditProfile.setText("Editar perfil");
+        btnEditProfile.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditProfileActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -109,11 +115,11 @@ public class FrmMyAccount extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnReturn)
+                .addComponent(btnMainMenu)
                 .addGap(35, 35, 35))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(135, 135, 135)
-                .addComponent(jButton1)
+                .addComponent(btnEditProfile)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -126,7 +132,7 @@ public class FrmMyAccount extends javax.swing.JFrame {
                     .addComponent(jLabel2))
                 .addGap(32, 32, 32)
                 .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -134,10 +140,10 @@ public class FrmMyAccount extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
                     .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
+                .addGap(60, 60, 60)
+                .addComponent(btnEditProfile)
                 .addGap(14, 14, 14)
-                .addComponent(btnReturn)
+                .addComponent(btnMainMenu)
                 .addContainerGap())
         );
 
@@ -155,9 +161,9 @@ public class FrmMyAccount extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+    private void btnMainMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMainMenuActionPerformed
         FormsHandler.goToMainScreen(this);
-    }//GEN-LAST:event_btnReturnActionPerformed
+    }//GEN-LAST:event_btnMainMenuActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
@@ -166,6 +172,10 @@ public class FrmMyAccount extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void btnEditProfileActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditProfileActionPerformed
+        JOptionPane.showMessageDialog(this, " You want to update the data  "  );
+    }//GEN-LAST:event_btnEditProfileActionPerformed
 
     /**
      * @param args the command line arguments
@@ -210,8 +220,8 @@ public class FrmMyAccount extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnReturn;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnEditProfile;
+    private javax.swing.JButton btnMainMenu;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
