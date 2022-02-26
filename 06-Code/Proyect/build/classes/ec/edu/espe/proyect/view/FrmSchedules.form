@@ -122,7 +122,7 @@
                     </Column>
                     <Column editable="true" title="Unidad" type="java.lang.Object">
                       <Data value="001"/>
-                      <Data value="002"/>
+                      <Data value="005"/>
                       <Data value="003"/>
                       <Data value="001"/>
                       <Data value="002"/>
