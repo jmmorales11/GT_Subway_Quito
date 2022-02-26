@@ -48,7 +48,7 @@ public class FrmSchedules extends javax.swing.JFrame {
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"7:00am", "001", "Carlos"},
-                {"7:10am", "002", "Luis"},
+                {"7:10am", "005", "Luis"},
                 {"7:20am", "003", "Javier"},
                 {"7:30am", "001", "Carlos"},
                 {"7:40am", "002", "Luis"},
